@@ -113,7 +113,7 @@ span{
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: animation 2s ease-in-out 7s forwards;
+    animation: animation 2s ease-in-out 1s forwards;
 }
 .scrolldown p{
     font-size: 15px;
