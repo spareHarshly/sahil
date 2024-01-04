@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="jquery.fireworks.js"></script>
+  <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="scrolldown">
+    <div class="icon"><i class="fa-solid fa-arrow-down"></i></div></i><p>Scroll<br>Down</p>
+  </div>
+  <div class="background">
+    <div id="example" align="center">
+  </div></div>
+
+  <div class="bg_image">
+    <div class="image1"><img src="images/sahil1.jpg" alt=""></div>
+    <div class="image2"><img src="images/sahil2.jpg" alt=""></div>
+  </div>
+
+  <div class="word"><img src="images/happybirthday.png" alt=""></div>
+  <div class="number">
+    <span class="s">S</span>
+    <span class="a">a</span>
+    <span class="h">h</span>
+    <span class="i">i</span>
+    <span class="l">l</span>
+  </div>
+  <div class="container">
+    <div class="wish-box">
+      <p>
+        Happy birthday <span>Sahil</span>, one of my best <span>buddies</span>, or I can say, a gamer buddy whom I met in <span>college</span> and with whom I have played lots of <span>games</span> so many times. Although you used <span>hacks</span> most of the time, it was really <span>fun</span> playing with you. I <span>hope</span> you get everything you want (only good things) and that your <span>dreams</span> come true one day.
+      </p>
+    </div>
+    <div class="wish-box">
+      <p>
+        Happy Birthday! On this joyous occasion, I want to express my warmest wishes for a day filled with love, laughter, and unforgettable moments. May this year be a chapter of new adventures, accomplishments, and cherished memories for you. As you blow out the candles, may each one carry a wish that comes true, bringing you happiness, success, and good health. Your presence in my life is a gift, and today is a celebration of the wonderful person you are. May the coming year be as bright and beautiful as your smile, and may all your dreams take flight. Cheers to another year of growth, love, and amazing experiences. Wishing you a fantastic birthday and an even more incredible year ahead!
+      </p>
+    </div>
+    <div class="contact" id="wishme">
+      <form action="https://formspree.io/f/mgegeoqk" method="POST" id="newyearform">
+        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" id="resizableTextarea" oninput="autoResize(this)" required></textarea>
+        <div class="input-box">
+          <input class="input-box1" name="Name" type="hidden" value="Sahil" required>
+          <input type="submit" value="Send Message" class="btn">
+        </div>
+      </form>
+      <div>
+        <p class="copyright">© 2023 All Rights Reserved | Harshdeep Singh</p>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    function autoResize(textarea) {
+      // Set the textarea height to its scrollHeight
+      textarea.style.height = '100px';
+      textarea.style.height = (textarea.scrollHeight) + 'px';
+    }
+    window.addEventListener("scroll", function () {
+        const pElement  = document.querySelector(".scrolldown");
+        const scrollPos = window.scrollY;
+        const scrollThreshold = 100;
+
+        if (scrollPos > scrollThreshold) {
+            pElement.style.display = 'none';
+        }
+    });
+  </script>
+
+</body>
+</html>
